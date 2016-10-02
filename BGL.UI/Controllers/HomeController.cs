@@ -1,4 +1,4 @@
-﻿using BGL.Infrastructure;
+﻿using BGL.Core.Interfaces;
 using BGL.UI.Common;
 using System.Threading.Tasks;
 using System.Web.Mvc;

@@ -43,6 +43,8 @@
     <Compile Include="Entities\BaseURI.cs" />
     <Compile Include="Entities\Owner.cs" />
     <Compile Include="Entities\RootObject.cs" />
+    <Compile Include="Interfaces\IApplicationContext.cs" />
+    <Compile Include="Interfaces\IClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

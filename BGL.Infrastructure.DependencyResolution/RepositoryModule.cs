@@ -1,4 +1,6 @@
-﻿using Ninject.Modules;
+﻿using BGL.Core.Interfaces;
+using BGL.Infrastructure.Repository;
+using Ninject.Modules;
 
 namespace BGL.Infrastructure.DependencyResolution
 {

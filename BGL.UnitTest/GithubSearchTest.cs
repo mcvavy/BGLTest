@@ -1,11 +1,11 @@
 ﻿using BGL.Core.Entities;
-using BGL.Infrastructure;
+using BGL.Infrastructure.Repository;
 using BGL.UI.Common;
+using NUnit.Framework;
+using Shouldly;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using NUnit.Framework;
-using Shouldly;
 
 namespace BGL.UnitTest
 {

@@ -1,19 +1,14 @@
-﻿using BGL.Core.Entities;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using BGL.Core.Entities;
+using BGL.Core.Interfaces;
+using Newtonsoft.Json;
 
-namespace BGL.Infrastructure
+namespace BGL.Infrastructure.Repository
 {
-    public interface IClient<out T> where T : new()
-    {
-        void Dispose();
-        Task<Owner> GetuserInfoAsync(string username);
-    }
-
     public abstract class GitHttpClient : IClient<HttpClient>
     {
         private readonly HttpClient _client;
