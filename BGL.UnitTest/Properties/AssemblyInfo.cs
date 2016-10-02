@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("THELMA.UnitTest")]
+[assembly: AssemblyTitle("BGL.UnitTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("THELMA.UnitTest")]
+[assembly: AssemblyProduct("BGL.UnitTest")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("170cc606-01be-40a5-8f00-179584d23cd5")]
+[assembly: Guid("96116095-0439-47ba-87dd-4226bb14a23d")]
 
 // Version information for an assembly consists of the following four values:
 //

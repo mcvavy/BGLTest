@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{170CC606-01BE-40A5-8F00-179584D23CD5}</ProjectGuid>
+    <ProjectGuid>{96116095-0439-47BA-87DD-4226BB14A23D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>THELMA.UnitTest</RootNamespace>
-    <AssemblyName>THELMA.UnitTest</AssemblyName>
+    <RootNamespace>BGL.UnitTest</RootNamespace>
+    <AssemblyName>BGL.UnitTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -60,9 +60,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BGL.Core\BGL.Core.csproj">
       <Project>{88d23054-6cf7-40a1-b3aa-66934fe8a547}</Project>
       <Name>BGL.Core</Name>
@@ -79,6 +76,10 @@
       <Project>{de641e19-8566-4d96-916f-db6c5a8d87b8}</Project>
       <Name>BGL.UI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

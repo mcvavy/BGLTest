@@ -1,13 +1,13 @@
 ﻿using BGL.Core.Entities;
 using BGL.Infrastructure;
 using BGL.UI.Common;
-using NUnit.Framework;
-using Shouldly;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using NUnit.Framework;
+using Shouldly;
 
-namespace THELMA.UnitTest
+namespace BGL.UnitTest
 {
     [TestFixture]
     public class GithubSearchTest
