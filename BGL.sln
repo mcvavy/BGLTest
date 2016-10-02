@@ -3,8 +3,59 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Core", "01. Core", "{8FB717E7-DB56-415C-8CAC-89420CBB4492}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Infrastructure", "02. Infrastructure", "{A55B0E9A-2DCE-49B0-A6CE-DD2D01375621}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. UI", "03. UI", "{586B7B6A-9DF1-45F3-A6BC-215892BF3757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGL.Core", "BGL.Core\BGL.Core.csproj", "{88D23054-6CF7-40A1-B3AA-66934FE8A547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGL.Infrastructure", "BGL.Infrastructure\BGL.Infrastructure.csproj", "{A89111F4-092C-4AC3-BD85-DBEEECEDAC32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Test", "04. Test", "{4531CFD5-4B27-40B6-B25F-DBCC3A2305BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGL.UI", "BGL.UI\BGL.UI.csproj", "{DE641E19-8566-4D96-916F-DB6C5A8D87B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGL.Infrastructure.DependencyResolution", "BGL.Infrastructure.DependencyResolution\BGL.Infrastructure.DependencyResolution.csproj", "{F3499CB6-7C14-4AB7-BC3F-C2E3609E205F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "THELMA.UnitTest", "THELMA.UnitTest\THELMA.UnitTest.csproj", "{170CC606-01BE-40A5-8F00-179584D23CD5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88D23054-6CF7-40A1-B3AA-66934FE8A547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D23054-6CF7-40A1-B3AA-66934FE8A547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D23054-6CF7-40A1-B3AA-66934FE8A547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D23054-6CF7-40A1-B3AA-66934FE8A547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89111F4-092C-4AC3-BD85-DBEEECEDAC32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89111F4-092C-4AC3-BD85-DBEEECEDAC32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89111F4-092C-4AC3-BD85-DBEEECEDAC32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89111F4-092C-4AC3-BD85-DBEEECEDAC32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE641E19-8566-4D96-916F-DB6C5A8D87B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE641E19-8566-4D96-916F-DB6C5A8D87B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE641E19-8566-4D96-916F-DB6C5A8D87B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE641E19-8566-4D96-916F-DB6C5A8D87B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3499CB6-7C14-4AB7-BC3F-C2E3609E205F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3499CB6-7C14-4AB7-BC3F-C2E3609E205F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3499CB6-7C14-4AB7-BC3F-C2E3609E205F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3499CB6-7C14-4AB7-BC3F-C2E3609E205F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170CC606-01BE-40A5-8F00-179584D23CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170CC606-01BE-40A5-8F00-179584D23CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170CC606-01BE-40A5-8F00-179584D23CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170CC606-01BE-40A5-8F00-179584D23CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88D23054-6CF7-40A1-B3AA-66934FE8A547} = {8FB717E7-DB56-415C-8CAC-89420CBB4492}
+		{A89111F4-092C-4AC3-BD85-DBEEECEDAC32} = {A55B0E9A-2DCE-49B0-A6CE-DD2D01375621}
+		{DE641E19-8566-4D96-916F-DB6C5A8D87B8} = {586B7B6A-9DF1-45F3-A6BC-215892BF3757}
+		{F3499CB6-7C14-4AB7-BC3F-C2E3609E205F} = {A55B0E9A-2DCE-49B0-A6CE-DD2D01375621}
+		{170CC606-01BE-40A5-8F00-179584D23CD5} = {4531CFD5-4B27-40B6-B25F-DBCC3A2305BB}
 	EndGlobalSection
 EndGlobal

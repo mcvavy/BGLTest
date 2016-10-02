@@ -1,0 +1,49 @@
+﻿@model BGL.UI.Models.DTO.PersonDto
+
+
+
+<div class="animated slideInLeft marginbottom">
+
+
+
+    <div class="profile text-left">
+        <p><span class="text-info"><b>User Name:</b></span> @Model.login</p>
+        <p><span class="text-info"><b>Full Name:</b></span> @Model.name</p>
+        <p><span class="text-info"><b>Location:</b></span> @Model.location</p>
+    </div>
+    <div class="profile imglow">
+        <img src="@Model.avatar_url" class="img-circle" alt="profile image" />
+    </div>
+
+    <table class="table text-center">
+
+        <tr class="theader">
+            <th>#</th>
+            <th>Description</th>
+            <th>URL</th>
+            <th>Stargazers Count</th>
+            <th>Language</th>
+            <th>Forks</th>
+            <th>Date Created</th>
+            <th>Last Updated</th>
+        <tr>
+            @{ int number = 1;}
+            @foreach (var item in Model.Repos)
+            {
+
+
+            <tr>
+                <td>@number</td>
+                <td>@item.description</td>
+                <td><a href="@item.html_url" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                <td>@item.stargazers_count <i class="fa fa-star" aria-hidden="true"></i></td>
+                <td>@item.language</td>
+                <td><span class="badge">@item.forks</span></td>
+                <td>@DateTime.Parse(@item.created_at).ToShortDateString()</td>
+                <td>@DateTime.Parse(@item.updated_at).ToShortDateString()</td>
+            </tr>
+                number += 1;
+
+            }
+        </table>
+    </div>

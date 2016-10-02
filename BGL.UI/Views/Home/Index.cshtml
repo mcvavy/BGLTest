@@ -1,0 +1,55 @@
+﻿@using System.Web.UI.WebControls
+@model BGL.UI.Models.DTO.PersonDto
+
+@{
+    ViewBag.Title = "Home Page";
+
+    var options = new AjaxOptions
+    {
+        OnBegin = "onBegin",
+        OnComplete = "onComplete",
+        OnSuccess = "onSuccess",
+        OnFailure = "onFailure",
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "searchResult",
+        LoadingElementId = "loadingEl"
+    };
+
+}
+
+<div class="row">
+    <div class="col-md-8 col-lg-offset-2 text-center">
+        <h4>
+            <img class="imgsize" src="~/Assets/images/1475429583_github.png" alt="Github logo" />
+        </h4>
+
+
+        @using (Ajax.BeginForm("GetPersonDetails", "Home", options, new { onsubmit = "return validateForm();", @id = "searchForm" }))
+        {
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <div class="form-group">
+                @Html.TextBox("username", null, new { @class = "form-control text-center input-lg", @PlaceHolder = "Enter a username" })
+
+                <input id="subbtn" class="btn btn-primary btn-lg submitbut" value="Search" type="submit">
+            </div>
+
+            <div id="loadingEl" style="display: none;">
+                <img src="~/Assets/images/loader.gif" class="imgMargin" alt="Loading..." />
+            </div>
+        }
+
+
+
+        <div id="searchResult">
+            @if (Model != null)
+            {
+                @Html.Partial("_Persondetails", Model);
+
+            }
+        </div>
+
+    </div>
+</div>
