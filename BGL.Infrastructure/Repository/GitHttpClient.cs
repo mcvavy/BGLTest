@@ -34,11 +34,12 @@ namespace BGL.Infrastructure.Repository
         {
             Owner OwerObject = null;
 
-            string auth = "?client_id=f00d7e0b391f327a7637&client_secret=9664ede4e55b04c2c6487be73900206903161ab9";
+            //string auth = "?client_id=ClienSecret&client_secret=Screret";
+            //use client_id & secret to get request in authentication mode
 
             try
             {
-                var ownerUrl = new Uri(_client.BaseAddress, username + auth);
+                var ownerUrl = new Uri(_client.BaseAddress, username); // +auth
 
                 var getUserBasicInfo = await _client.GetAsync(ownerUrl);
 
@@ -51,7 +52,7 @@ namespace BGL.Infrastructure.Repository
                     //fetch All user's repo
                     try
                     {
-                        var url = new Uri(_client.BaseAddress, username + "/repos" + auth);
+                        var url = new Uri(_client.BaseAddress, username + "/repos"); // +auth
 
                         var response = await _client.GetAsync(url);
 
