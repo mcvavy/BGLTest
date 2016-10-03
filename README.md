@@ -7,4 +7,4 @@
   - UI Represent the View the user interact with
   - Test contains unit tests
   
- 2. The UI should be made the startup project before running the application
+2. The UI should be made the startup project before running the application
