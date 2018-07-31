@@ -3,6 +3,7 @@ using BGL.Core.Interfaces;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -37,11 +38,13 @@ namespace BGL.Infrastructure.Repository
             //string auth = "?client_id=ClienSecret&client_secret=Screret";
             //use client_id & secret to get request in authentication mode
             
-            string auth = "?client_id=f00d7e0b391f327a7637&client_secret=9664ede4e55b04c2c6487be73900206903161ab9";
 
             try
             {
-                var ownerUrl = new Uri(_client.BaseAddress, username + auth); // +auth
+                ServicePointManager.Expect100Continue = true;
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
+                var ownerUrl = new Uri(_client.BaseAddress, username); // +auth
 
                 var getUserBasicInfo = await _client.GetAsync(ownerUrl);
 
